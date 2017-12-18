@@ -6,7 +6,7 @@ function component() {
     var element = j('<div></div>');
   // Lodash, now imported by this script
   
-  element.html(_.join(['Hello','webpack'], ' '))
+  element.html(_.join(['Hi','webpack'], ' '))
 
   
   return element.get(0);
