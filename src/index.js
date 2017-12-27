@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 /* import App from './App'; */
 import registerServiceWorker from './registerServiceWorker';
-/*ReactDOM.render(
+/* ReactDOM.render(
     <h1>Hi, world!</h1>,
     document.getElementById('root2')
   );
@@ -37,10 +37,11 @@ import registerServiceWorker from './registerServiceWorker';
   )
   */
 
-import Welcome from './Welcome'
+ import Welcome from './Welcome'
 
 ReactDOM.render(
- /* <Welcome/>, */
+ // <Welcome/>, 
   <Welcome name="frank"/>,
   document.getElementById('root')
 )
+
