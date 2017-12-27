@@ -8,7 +8,7 @@
     "react-scripts": "1.0.17"
   },
   "scripts": {
-    "homepage" : "https://osborne1126.github.io/webpack-demo/build",
+    "homepage" : "https://osborne1126.github.io/webpack-demo/build/",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
