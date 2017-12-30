@@ -7,7 +7,7 @@ import registerServiceWorker from './registerServiceWorker';
   /*  <h1>Hi, world!</h1>, */
     <App />,
     document.getElementById('root')
-  );
+  )
 
 
  /* function tick() {
@@ -44,5 +44,5 @@ ReactDOM.render(
  // <Welcome/>, 
   <Welcome name="frank"/>,
   document.getElementById('root')
-)
+) 
 */
