@@ -27,7 +27,7 @@ class App extends Component {
           </li>
         )
       })
-      console.log(todos)
+    /*  console.log(todos) */
 
     return (
       <div className="App">
@@ -35,7 +35,10 @@ class App extends Component {
         <div className="inputWrapper">
      {/*   <TodoInput content={this.state.newTodo} /> */}
       {/*  <TodoInput content={this.state.newTodo} onSubmit={this.addTodo} /> */}
-        <TodoInput content={this.state.newTodo} onSubmit={this.addTodo.bind(this)} />
+     {/*   <TodoInput content={this.state.newTodo} onSubmit={this.addTodo.bind(this)} /> */}
+        <TodoInput content={this.state.newTodo} 
+          onChange={this.changeTitle.bind(this)}
+          onSubmit={this.addTodo.bind(this)} />
       </div>
         <ol>
           {todos}
@@ -45,6 +48,12 @@ class App extends Component {
   }
  /* addTodo(){
     console.log('我得添加一个 todo 了') */
+  changeTitle(event){
+    this.setState({
+      newTodo: event.target.value,
+      todoList: this.state.todoList
+    })
+  }
     addTodo(event){
       this.state.todoList.push({
         id: idMaker(),
