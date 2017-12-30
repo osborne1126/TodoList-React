@@ -24,7 +24,9 @@ class App extends Component {
       /*    <li> */
           <li key={index} >
         {/*   <TodoItem todo={item} /> */}
-            <TodoItem todo={item} onToggle={this.toggle.bind(this)} />
+        { /*  <TodoItem todo={item} onToggle={this.toggle.bind(this)} /> */}
+            <TodoItem todo={item} onToggle={this.toggle.bind(this)} 
+              onDelete={this.delete.bind(this)}/>
           </li>
         )
       })
@@ -70,6 +72,10 @@ class App extends Component {
         newTodo: '',
         todoList: this.state.todoList
       })
+  }
+  delete(event, todo){
+    todo.deleted = true
+    this.setState(this.state) 
   }
 }
 
