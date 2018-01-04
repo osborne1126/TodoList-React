@@ -6,6 +6,14 @@ import TodoInput from './TodoInput'
 import TodoItem from './TodoItem'
 import * as localStore from './localStore'
 
+import AV from 'leancloud-storage'
+var APP_ID = pcfnumV0mezjxVv5EeYPHQYv-gzGzoHsz
+var APP_KEY = 3qHUkbK0avJOluNByjBDQ33Y
+AV.init({
+  appId: APP_ID,
+  appKey: APP_KEY
+})
+
 class App extends Component {
   constructor(props){
     super(props)
