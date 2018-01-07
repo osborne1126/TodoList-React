@@ -26,13 +26,26 @@ export default class UserDialog extends Component{
         case 202:
           alert('用户名已被占用')
           break
+        case 203:  
+          alert('电子邮箱地址已经被占用')
+          break
         default:
           alert(error)
           break
       }
     }
-    signUp(email, username, password, success, error)
-  }
+   
+    if(!username || username.length<=3){
+        alert('用户名必须大于三个字符')
+      }else if(!email || email.indexOf('@') == '-1'){
+        alert('请输入合法的email')
+      }else if(!password || password.length<=6){
+        alert('密码必须不小于六个字符')
+      }else{
+        signUp(email, username, password, success, error)      
+      }
+    }
+  
   signIn(e){
     e.preventDefault()
     let {username, password} = this.state.formData
@@ -41,8 +54,17 @@ export default class UserDialog extends Component{
     }
     let error = (error)=>{
       switch(error.code){
+        case 200:        
+          alert('没有提供用户名，或者用户名为空')
+          break
+        case 201: 
+          alert('没有提供密码，或者密码为空')
+          break
         case 210:
           alert('用户名与密码不匹配')
+          break
+        case 211:
+          alert('找不到用户')
           break
         default:
           alert(error)
