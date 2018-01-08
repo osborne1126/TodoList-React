@@ -49,19 +49,30 @@
   
   /*.UserDialog .forgotPassword > h3 { padding: 1em; }
   .UserDialog .forgotPassword > form { padding: 0 1em 1em; } */
-  .forgotPassword input{
+  .forgotPassword .row{
     margin-top: 10px;
+    width:80%;
   }
-  .forgotPassword input[type="submit"]{
+  .forgotPassword >.row.actions button[type="submit"]{
     width: 9em;
     display: inline-block;
+
+    height: 30px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
   }
   .forgotPassword a{
     margin-left: 20px;
   }
 
   .UserDialog form>.row{ display: flex; padding: .3em 0; }
-  .UserDialog form>.row>label:first-child{ width: 4em; }
+  .UserDialog form>.row>label:first-child{
+    width: 4em;
+
+  /*border:1px solid red; */
+    margin-top:5px;
+ }
   .UserDialog form>.row.actions{ padding-left: 4em; display: flex; align-items: center;}
   .UserDialog form>.row.actions button{ margin-right: .5em; } 
   
@@ -77,18 +88,20 @@
     border: 1px solid #ccc;
   }
 
-.UserDialog button{
-     /* font: inherit; padding: .2em; */
-
-     display: inline-block;
-     text-align: center;
-     color: #fff;
-     background-color: #a4e4cf;
-     box-sizing: border-box;
-     padding: 5px 10px;
-     border: none;
-     width: 140px;
-     height: 40px;
-     font-size: 21px;
-     margin-top: 10px;
+/*.UserDialog button{ font: inherit; padding: .2em; } */
+ #submit {
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    background-color: #a4e4cf;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    border: none;
+    width: 140px;
+    height: 40px;
+    font-size: 21px;
+    margin-top: 10px;
+  
+    margin-left:40px;   
  }
+ 

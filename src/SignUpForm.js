@@ -19,7 +19,7 @@ export default function (props) {
           onChange={props.onChange.bind(null, 'password')}/>
       </div>
       <div className="row actions">
-       <button type="submit">注册</button>
+       <button type="submit" id="submit">注册</button>
       </div>
     </form>
   )
