@@ -59,7 +59,7 @@
   margin-top: 30px;
   padding-left: 25px;
 }
-.App button{
+.App .signOut{
   height: 35px;
   width: 60px;
   border-radius: 10px;
@@ -72,4 +72,12 @@
   position: absolute;
   top: 55px;
   right: 40px;
+}
+.iconfont {
+  font-family: iconfont!important;
+  font-size: 30px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: .2px;
+  -moz-osx-font-smoothing: grayscale;
 }
